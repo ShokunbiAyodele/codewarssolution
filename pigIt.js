@@ -6,9 +6,15 @@
 function pigIt(str){
     //Code here
   return   str.split(' ').map(word => {
- let firstLetter = word.slice(1);
+     if((/([a-zA-Z])/).test(word)){
+       let firstLetter = word.slice(1);
    return  firstLetter + word.charAt(0)+ 'ay';
+       }
+    else{
+      return word
+    }
     }).join(' ')
-  }
+  } 
 
-  console.log(pigIt('Pig latin is cool'));
+
+  console.log(pigIt('i am a winner'))
