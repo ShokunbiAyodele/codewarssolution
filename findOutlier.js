@@ -7,17 +7,10 @@
 
 function findOutlier(integers){
     //your code here
-    const oddArray = [];
-    const evenArray = [];
-    for(let integer in integers ){
-        if(integer % 2 === 0){
-            evenArray.push(integer);
-        }
-        else{
-            oddArray.push(integer);
-        }
-    }
-    return evenArray.length === 1? evenArray[0]: oddArray[0];s
-  }
+    let even = integers.filter(element => element % 2 === 0);
+    let odd = integers.filter(element => element % 2 !== 0);
+    
+    return even.length === 1? even[0]: odd[0];
+  } 
 
   console.log(findOutlier([[1,1,0,1,1]]));

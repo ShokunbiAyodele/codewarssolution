@@ -23,8 +23,9 @@
 // anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
 
 function anagrams(word,words) {
-    let sort =(word) => word.split('').sort().join('');  
-   return words.filter(w => sort(w) === sort(word));
+    sort = word => word.split('').sort().join('');
+
+    return words.filter(w => sort(w) === sort(word));
 }   
 console.log(anagrams('racer',['crazer', 'carer', 'racar', 'caers', 'racer']));
 

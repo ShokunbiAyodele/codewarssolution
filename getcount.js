@@ -6,8 +6,6 @@
 
 function getCount(str) {
     let vowelsCount = 0;
-    let compareVowel = 'aeiou';
-    
     // enter your magic here
     let inputString = str.split('');
     for(let i = 0; i<inputString.length;i++){

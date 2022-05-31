@@ -16,3 +16,5 @@ function multipleofInput(number){
 
 
 console.log(multipleofInput(10));
+
+
